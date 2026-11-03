@@ -12,3 +12,21 @@ for char in user_text:
         print(8)
     else:
         print(char)
+
+# Second version
+output = ""
+for char in user_text:
+    if char in "Ll":
+        output = output + "1"
+    elif char in "Ee":
+        output = output + "3"
+    elif char in "Tt":
+        output = output + "7"
+    elif char in "Oo":
+        output = output + "0"
+    else:
+        output = output + char
+
+    print("Progress: ", output)
+
+print("Final: ", output)
